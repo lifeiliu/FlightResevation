@@ -24,7 +24,7 @@ public class UserController {
 	public String registerUser(@ModelAttribute("user")User user) {
 		userRepo.save(user);
 		return "login";
-	}
+	} 	
 	
 	@RequestMapping("/showLogin")
 	public String showLogin() {

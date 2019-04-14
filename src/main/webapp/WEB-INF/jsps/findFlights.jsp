@@ -8,5 +8,28 @@
 </head>
 <body>
 <h2>Search for flights</h2>
+<table>
+
+<tr>
+<th>flightNumber</th>
+<th>operatingAirline</th>
+<th>departureCity</th>
+<th>arrivalCity</th>
+<th>dateOfDeparture</th>
+<th>estimatedDepartureTime</th>
+</tr>
+<c:forEach items="${flights}" var="flight" >
+<tr>
+<td>${flight.flightNumber}</td>
+<td>${flight.operatingAirline}</td>
+<td>${flight.departureCity}</td>
+<td>${flight.arrivalCity}</td>
+<td>${flight.dateOfDeparture}</td>
+<td>${flight.estimatedDepartureTime}</td>
+<td><a href="">book this flight</a></td>
+</tr> 
+</c:forEach>
+</table>
+
 </body>
 </html>
